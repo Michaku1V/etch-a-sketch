@@ -1,0 +1,117 @@
+:root {
+    --background-color-primary: rgb(233, 232, 232);
+}
+
+body {
+    margin: 0;
+    background: linear-gradient(45deg, #e66465, #9198e5);;
+    font-family: 'Shrikhand', cursive;
+    height: 100vh;
+}
+
+h1 {
+    background: linear-gradient(45deg, #722fc9, #ee1808);;
+    background-clip: text;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    -webkit-text-stroke: 2px black;
+    font-size: 50px;
+    letter-spacing: 2px;
+    transform: rotate(-10deg);
+    display: inline;
+    position: absolute;
+    left: 10px;
+    top: 0;
+    
+}
+
+p {
+    font-size: 24px;
+}
+
+input[type="color"] {
+    margin-top: -20px;
+}
+        
+.btn {
+    background-color: black;
+    color: white;
+    border: none;
+    border-radius: 10px;
+    display: block;
+    padding: 25px;
+    cursor: pointer;
+    font-size: 26px;
+    font-family: monospace;
+    align-self: center;
+}
+
+.btn:hover {
+    background-color: rgb(5, 78, 21);
+    color: white;
+}
+
+.btn-set {
+    margin: 32px auto;
+}
+
+.btn-crazy-rainbow {
+    display: block;
+    margin-top: 20px;
+    border: 0.5px solid purple;
+    border-radius: 8px;
+    cursor: pointer;
+    background-color: transparent;
+    font-family: inherit;
+    font-size: inherit;
+}
+
+.btn-crazy-rainbow:hover, .btn-crazy-rainbow:active {
+    background-color: black;
+    background: linear-gradient(45deg, #722fc9, #ee1808);;
+    background-clip: text;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+
+.active {
+    border: 5px solid purple;
+    background: linear-gradient(45deg, #722fc9, #ee1808);;
+    background-clip: text;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+
+.container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 0 100px;
+    margin-top: 115px;
+}
+
+.color-picker {
+    border: none;
+    height: 100px;
+    width: 100px;
+}
+
+.workspace {
+    margin: 0 auto 20px;
+    display: flex;
+    flex-wrap: wrap;
+    max-width: 800px;
+    border-radius: 10px;
+    background-color: var(--background-color-primary);
+}
+
+.square {
+    aspect-ratio: 1 / 1;
+    width: var(--width-box);
+    background-color: var(--background-color-primary);
+    border: 1px solid rgb(216, 211, 211);
+}
+
+.black {
+    background-color: black;
+}
